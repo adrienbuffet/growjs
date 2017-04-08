@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %> ! There is currently <%= plantscount %> plants to grow !</p>
+    <p><%= description %></p>
+	
+	<table>
+		<div class="plants">
+			<% for(var i=0; i < parameters.plants.length; i++) { %>
+				<div class="plant" id="<%= parameters.plants[i].name %>">
+					<p class="name top"><%= parameters.plants[i].name %></p>
+					<img src="/images/<%= parameters.plants[i].name %>.jpeg" heigh="250px" width="150"/>
+					<p class="status">Arrosée ya 1h wesh</p>
+					<button class="testing-button" data-pin="<%= parameters.plants[i].moisturesensor %>" onclick="testing(this)">Test</button>
+					<button class="watering-button" data-pin="<%= parameters.plants[i].waterpump %>" onclick="watering(this)">Water</button>
+				</div>
+			<% } %>
+		</div>
+	</table>
+	<script type="text/javascript" src="/javascript/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript">
+		function testing(btn) {
+			var pin = btn.getAttribute('data-pin');
+			console.log(pin);
+		}
+
+		function watering(btn) {
+			var pin = btn.getAttribute('data-pin');
+			console.log(pin);
+		}
+	</script>
+  </body>
+</html>

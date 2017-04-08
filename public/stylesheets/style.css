@@ -1,0 +1,72 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.plants {
+    font-size: 0px;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.plant {
+    border: solid 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 0px;
+    margin: 25px;
+    width: 20%;
+    white-space: nowrap;
+}
+
+    .plant * {
+        font-size: initial;
+        white-space: initial;
+    }
+
+    .plant > :first-child {
+        text-align: center;
+        margin: 2px 6px 4px; /* top, sides, bottom */
+    }
+
+    .plant > button {
+        border: none;
+        box-sizing: border-box;
+        color: white;
+        font-size: 16px;
+        padding: 0px 40px;
+        width: 50%;
+    }
+
+    .status {
+        padding: 2px 6px;
+        text-align: center;
+    }
+
+
+    img {
+        box-shadow: 1px 1px 2px grey;
+        display: block;
+        margin: auto;
+    }
+
+    .testing-button {
+        background-color: red;
+    }
+
+    .watering-button {
+        background-color: #4CAF50;
+    }
+
+
+
+

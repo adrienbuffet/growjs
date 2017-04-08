@@ -1,0 +1,26 @@
+{
+  "plants":
+    [
+      {
+        "name" : "Marie",
+        "waterpump" : 10 ,
+        "moisturesensor" : 11
+      },
+      {
+        "name" : "Jacques",
+        "waterpump" : 12 ,
+        "moisturesensor" : 13
+      },
+      {
+        "name" : "Tintin",
+        "waterpump" : 14 ,
+        "moisturesensor" : 15
+      },
+      {
+        "name" : "Milou",
+        "waterpump" : 16 ,
+        "moisturesensor" : 17
+      }
+    ]
+}
+
