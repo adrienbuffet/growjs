@@ -8,8 +8,4 @@ if len(sys.argv) == 2:
 	gpioPin = int(sys.argv[1])
 	GPIO.setup(gpioPin, GPIO.IN)
 	input = GPIO.input(gpioPin)
-	if input:
-		print('false')
-	else:
-		print('true')
-
+	print(str(not input).lower())
